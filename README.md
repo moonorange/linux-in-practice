@@ -3,8 +3,13 @@
 本書のプログラムを実行するためにDockerfileを追加し、本のまとめをsummay.mdに記載
 
 
-#　コマンド
+# コマンド
+
 ```console
 # イメージのbuild
 docker build . -t linux_in_practice
 ```
+
+```console
+# コンテナ作成し接続
+docker run --rm -it linux_in_practice bash
